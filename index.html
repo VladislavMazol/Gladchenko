@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Доктор Гладченко</title>
+<!--
+
+Tooplate 2095 Level
+
+https://www.tooplate.com/view/2095-level
+
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/tooplate-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+		  
+		  <style>
+    #tm-section-1 {
+        display: none !important;
+    }
+</style>
+</head>
+
+    <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>
+            <div class="tm-top-bar" id="tm-top-bar">
+                <!-- Top Navbar -->
+                <div class="container">
+                    <div class="row">
+                        
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo2.png" alt="Site logo">
+                                Доктор Гладченко
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#top">ОБО МНЕ <span class="sr-only">(current)</span></a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">СТАТЬИ</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-6">ЗАПИСЬ НА ПРИЕМ</a>
+                                  </li>
+                                </ul>
+                            </div>                            
+                        </nav>            
+                    </div>
+                </div>
+            </div>
+			
+            <div class="tm-section tm-bg-img" id="tm-section-1">
+                <div class="tm-bg-white ie-container-width-fix-2">
+                    <div class="container ie-h-align-center-fix">
+                        <div class="row">
+                            <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                                <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                    <div class="form-row tm-search-form-row">
+                                        <div class="form-group tm-form-element tm-form-element-100">
+                                            <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                                            <input name="city" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-50">
+                                            <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                            <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-50">
+                                            <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                            <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                        </div>
+                                    </div>
+                                    <div class="form-row tm-search-form-row">
+                                        <div class="form-group tm-form-element tm-form-element-2">                                            
+                                            <select name="adult" class="form-control tm-select" id="adult">
+                                                <option value="">Adult</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-2x fa-user tm-form-element-icon"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">                                            
+                                            <select name="children" class="form-control tm-select" id="children">
+                                                <option value="">Children</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">
+                                            <select name="room" class="form-control tm-select" id="room">
+                                                <option value="">Room</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>
+                                            <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+                                        </div>
+                                        <div class="form-group tm-form-element tm-form-element-2">
+                                            <button type="submit" class="btn btn-primary tm-btn-search">Check Availability</button>
+                                        </div>
+                                      </div>
+                                      <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+                                          <p class="tm-margin-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                          <a href="#" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need Help?</a>
+                                      </div>
+                                </form>
+                            </div>                        
+                        </div>      
+                    </div>
+                </div>                  
+            </div>
+            
+            <div class="tm-section-2">
+                <div class="container">
+<div class="row">
+    <div class="col text-center">
+        <h1 style="font-weight: 700; font-size: 42px; color: #fff; margin-bottom: 5px;">Иван Владимирович Гладченко</h1>
+		<h1 style="font-weight: 700; font-size: 18px; color: #fff; margin-bottom: 20px;">ВРАЧ ТРАВМАТОЛОГ-ОРТОПЕД</h1>
+        <p style="font-size: 18px; font-weight: 300; color: #fff;">Боль в спине и суставах — работаем с причиной, а не с симптомом.</p>
+    </div>                
+</div>
+                </div>        
+            </div>
+            
+            <div class="tm-section tm-position-relative">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
+                    <polygon fill="#a9cce3" points="0,0  100,0  50,60"></polygon>                   
+                </svg> 
+                <div class="container tm-pt-5 tm-pb-4">
+    <div class="row text-center">
+        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                            
+            <i class="fa tm-fa-6x fa-user-md tm-color-primary tm-margin-b-20"></i>
+            <h3 class="tm-color-primary tm-article-title-1">Я врач травматолог-ортопед с большим опытом</h3>
+            <p>Моя специализация — лечение боли в позвоночнике и суставах, восстановление функции опорно-двигательного аппарата.</p>
+        </article>
+        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                            
+            <i class="fa tm-fa-6x fa-stethoscope tm-color-primary tm-margin-b-20"></i>
+            <h3 class="tm-color-primary tm-article-title-1">В работе опираюсь на доказательную медицину и клиническое мышление.</h3>
+            <p>В практике применяю авторскую методику <b>Лечебная Деимпульсация:</b> она воздействует на ключевое звено боли и уменьшает факторы, которые ее поддерживают.</p>
+        </article>
+        <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                           
+            <i class="fa tm-fa-6x fa-heartbeat tm-color-primary tm-margin-b-20"></i>
+            <h3 class="tm-color-primary tm-article-title-1">На этом ресурсе рассказываю</h3>
+            <p>Как формируется боль, почему важно искать причину, в каких ситуациях методика дает наилучший эффект и как выглядит понятный план лечения.</p>
+        </article>
+    </div>        
+</div>
+            </div>
+            
+            <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                            <div class="tm-article-carousel">                            
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-01.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Почему лечение боли в спине и суставах не дает стойкого результата?</h3></header>
+                                        <p>Основная причина неэффективного лечения боли в позвоночнике и суставах заключается в том, что устраняют симптом, а не источник боли.</p>
+                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary" data-toggle="modal" data-target="#infoModal1">Подробнее</a>
+                                    </div>                                
+                                </article>                    
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-02.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Почему боль возвращается?</h3></header>
+                                        <p>Метод <b>Лечебной деимпульсации</b> позволяет быстро устранить источник боли и снять воспаление.</p>
+                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary" data-toggle="modal" data-target="#infoModal2">Подробнее</a>
+                                    </div>                                
+                                </article>
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-03.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">Метод, который применяется, когда боль мешает жить</h3></header>
+                                        <p>При болях в спине и суставах человек хочет не временное облегчение, а состояние, в котором можно спокойно двигаться и не думать о боли каждый день.</p>
+                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary" data-toggle="modal" data-target="#infoModal3">Подробнее</a>
+                                    </div>                                
+                                </article>
+                                <article class="tm-bg-white mr-2 tm-carousel-item">
+                                    <img src="img/img-04.jpg" alt="Image" class="img-fluid">
+                                    <div class="tm-article-pad">
+                                        <header><h3 class="text-uppercase tm-article-title-2">В каких случаях боль в шее и плечах требует точечного вмешательства</h3></header>
+                                        <p>Основная причина неэффективного лечения боли в позвоночнике и суставах заключается в работе с симптомами, а не с источником боли.</p>
+                                        <a href="#" class="text-uppercase btn-primary tm-btn-primary" data-toggle="modal" data-target="#infoModal4">Подробнее</a>
+                                    </div>                                
+                                </article>                    
+                                
+                            </div>    
+							
+							<!-- Текст под каруселью -->
+                            <div style="text-align: center; margin-top: 30px;">
+                                <p style="font-size: 16px; color: #34495e;">
+                                    Больше интересных постов доступно в 
+                                    <a href="https://t.me/dr_gladchenko" target="_blank" style="color: #2e86c1; font-weight: 600; text-decoration: none;">
+                                        Telegram
+                                    </a>
+                                </p>
+                            </div>
+							
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
+                            <div class="tm-bg-white">
+                                <div class="tm-bg-primary tm-sidebar-pad">
+                                    <h3 class="tm-color-white tm-sidebar-title">Рекомендуемо к прочтению</h3>
+                                    <p class="tm-color-white tm-margin-b-0 tm-font-light"></p>
+                                </div>
+                                <div class="tm-sidebar-pad-2">
+                                    <a href="#" class="media tm-media tm-recommended-item" data-toggle="modal" data-target="#infoModal1">
+                                        <img src="img/tn-img-01.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Статья №1</h4>
+                                        </div>                                        
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item" data-toggle="modal" data-target="#infoModal2">
+                                        <img src="img/tn-img-02.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Статья №2</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item" data-toggle="modal" data-target="#infoModal3">
+                                        <img src="img/tn-img-03.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Статья №3</h4>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="media tm-media tm-recommended-item" data-toggle="modal" data-target="#infoModal4">
+                                        <img src="img/tn-img-04.jpg" alt="Image">
+                                        <div class="media-body tm-media-body tm-bg-gray">
+                                            <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Статья №4</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+<div class="modal fade" id="infoModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 3px solid #2e86c1;">
+                <h4 class="modal-title" style="color: #1a5276; font-weight: 700;">Nunc in felis aliquet metus luctus iaculis</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6" style="display: flex; align-items: center;">
+                        <!-- ВЕРТИКАЛЬНОЕ ВИДЕО -->
+                        <video controls style="width: 100%; height: auto; max-height: 500px; border-radius: 8px;">
+                            <source src="videos/1.mp4" type="video/mp4">
+                            <source src="videos/video.ogg" type="video/ogg">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: #1a5276; font-weight: 600;">Почему лечение боли в спине и суставах не дает стойкого результата?</h5>
+                        <p style="color: #555; line-height: 1.8;">
+                            Основная причина неэффективного лечения боли в позвоночнике и суставах заключается в том, что устраняют симптом, а не источник боли.</br></br>
+							<b>Метод Лечебной деимпульсации </b> основан на точечном воздействии на механизм боли. Препарат вводится туда, где боль начинается, а не туда, где она просто ощущается.</br></br>
+							Благодаря такому подходу достигается стойкая ремиссия. Пациент длительное время живет без боли и возвращается к полноценной активности.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #eee;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 20px;">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="infoModal12" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 3px solid #2e86c1;">
+                <h4 class="modal-title" style="color: #1a5276; font-weight: 700;">Nunc in felis aliquet metus luctus iaculis</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6" style="display: flex; align-items: center;">
+                        <!-- ВЕРТИКАЛЬНОЕ ВИДЕО -->
+                        <video controls style="width: 100%; height: auto; max-height: 500px; border-radius: 8px;">
+                            <source src="videos/1.mp4" type="video/mp4">
+                            <source src="videos/video.ogg" type="video/ogg">
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: #1a5276; font-weight: 600;">Почему лечение боли в спине и суставах не дает стойкого результата?</h5>
+                        <p style="color: #555; line-height: 1.8;">
+                            Основная причина неэффективного лечения боли в позвоночнике и суставах заключается в том, что устраняют симптом, а не источник боли.</br></br>
+							<b>Метод Лечебной деимпульсации </b> основан на точечном воздействии на механизм боли. Препарат вводится туда, где боль начинается, а не туда, где она просто ощущается.</br></br>
+							Благодаря такому подходу достигается стойкая ремиссия. Пациент длительное время живет без боли и возвращается к полноценной активности.
+                        </p>
+                        <p style="color: #555; line-height: 1.8;">
+                            <strong>Особенности:</strong>
+                            <ul style="color: #555;">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Sed do eiusmod tempor</li>
+                            </ul>
+                        </p>
+                        <p style="color: #555; line-height: 1.8;">
+                            <strong>Стоимость:</strong> от 5000 ₽
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background: #2e86c1; border-color: #2e86c1; border-radius: 30px; padding: 10px 30px;">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #eee;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 20px;">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="infoModal777" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 3px solid #2e86c1;">
+                <h4 class="modal-title" style="color: #1a5276; font-weight: 700;">Nunc in felis aliquet metus luctus iaculis</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/img-01.jpg" alt="Image" class="img-fluid" style="border-radius: 8px;">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: #1a5276; font-weight: 600;">Подробное описание</h5>
+                        <p style="color: #555; line-height: 1.8;">
+                            Aliquam ac lacus volutpat, dictum risus at, scelerisque nulla. 
+                            Nullam sollicitudin at augue venenatis eleifend. 
+                            Nulla ligula ligula, egestas sit amet viverra id, iaculis sit amet ligula.
+                        </p>
+                        <p style="color: #555; line-height: 1.8;">
+                            <strong>Особенности:</strong>
+                            <ul style="color: #555;">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Sed do eiusmod tempor</li>
+                            </ul>
+                        </p>
+                        <p style="color: #555; line-height: 1.8;">
+                            <strong>Стоимость:</strong> от 5000 ₽
+                        </p>
+                        <a href="#" class="btn btn-primary" style="background: #2e86c1; border-color: #2e86c1; border-radius: 30px; padding: 10px 30px;">Записаться</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #eee;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 20px;">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===== КОНЕЦ МОДАЛЬНОГО ОКНА ===== -->
+
+<div class="modal fade" id="infoModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 3px solid #2e86c1;">
+                <h4 class="modal-title" style="color: #1a5276; font-weight: 700;">Nunc in felis aliquet metus luctus iaculis</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/p-01.jpg" alt="Image" class="img-fluid" style="border-radius: 8px;">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: #1a5276; font-weight: 600;">Почему боль возвращается?</h5>
+                        <p style="color: #555; line-height: 1.8;">
+                            Метод Лечебной деимпульсации позволяет быстро устранить источник боли и снять воспаление. 
+							Тело выходит из состояния перегрузки, движения снова становятся возможными. Если при этом организм продолжает жить в привычных условиях, и не меняется образ жизни, со временем нагрузка снова накапливается. 
+							Это не ошибка лечения, а естественный процесс.</br></br>
+                            Период без боли дает человеку то, чего раньше не было. Возможность двигаться без страха, делать зарядку, ходить, постепенно возвращать физическую активность. 
+							С болью это невозможно. Когда боль уходит, появляется шанс изменить то, что раньше было недоступно, и тем самым продлить результат еще дольше. При правильном подходе боль может не вернуться вовсе.</br></br>
+                            Есть ситуации с выраженными изменениями, когда возврат боли неизбежен. Даже в таких случаях после лечения она становится мягче, реже и управляемой. 
+							Задача врача — создать это состояние и объяснить, как им воспользоваться. Дальнейший результат формируется совместной работой врача и пациента.
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #eee;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 20px;">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===== КОНЕЦ МОДАЛЬНОГО ОКНА ===== -->
+
+<div class="modal fade" id="infoModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 3px solid #2e86c1;">
+                <h4 class="modal-title" style="color: #1a5276; font-weight: 700;">Nunc in felis aliquet metus luctus iaculis</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/p-02.jpg" alt="Image" class="img-fluid" style="border-radius: 8px;">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: #1a5276; font-weight: 600;">Метод, который применяется, когда боль мешает жить</h5>
+                        <p style="color: #555; line-height: 1.8;">
+                            При болях в спине и суставах человек хочет не временное облегчение, а состояние, в котором можно спокойно двигаться и не думать о боли каждый день.</br></br>
+                            Метод <b>Лечебной деимпульсации</b> основан на инъекционном введении гормонального противовоспалительного препарата в сочетании с анестетиком. 
+							Препарат вводится непосредственно в зону, где очаг воспаления и формируется болевой синдром, а не в место, где боль просто ощущается. 
+							Такое воздействие позволяет быстро снизить воспалительный процесс и одновременно убрать боль.</br></br>
+                            Ключевая особенность метода в том, что работа ведется со связочным аппаратом позвоночника и суставов. 
+							Именно воспаление связок часто становится причиной стойкой боли, ограничения движений и повторных обострений. 
+							За счет точного введения препарата воспаление уменьшается, ткани перестают находиться в состоянии постоянной перегрузки, движения становятся возможными без боли.</br></br>
+							Метод применяется при болях после травм и операций, а также при артрозе, остеохондрозе и других дегенеративных изменениях. 
+							<b>Лечебная деимпульсация</b> позволяет добиться не кратковременного эффекта, а более стабильного состояния, при котором человек может вернуться к обычной жизни без постоянного приема обезболивающих.
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #eee;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 20px;">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===== КОНЕЦ МОДАЛЬНОГО ОКНА ===== -->
+
+<div class="modal fade" id="infoModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 3px solid #2e86c1;">
+                <h4 class="modal-title" style="color: #1a5276; font-weight: 700;">Nunc in felis aliquet metus luctus iaculis</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/p-03.jpg" alt="Image" class="img-fluid" style="border-radius: 8px;">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 style="color: #1a5276; font-weight: 600;">В каких случаях боль в шее и плечах требует точечного вмешательства</h5>
+                        <p style="color: #555; line-height: 1.8;">
+                            Основная причина неэффективного лечения боли в позвоночнике и суставах заключается в работе с симптомами, а не с источником боли. Пока причина остается активной, боль склонна возвращаться независимо от применяемых процедур.</br></br>
+                            Боль в шее, между лопатками и плечах чаще всего связана с изменениями в шейном и грудном отделе позвоночника. 
+							Остеохондроз, острые и хронические боли, миалгии, а также онемение и снижение чувствительности в верхних конечностях формируются из-за воспаления связочного аппарата и нарушения работы суставов. 
+							Именно оттуда начинается болевой сигнал, который затем распространяется на мышцы и нервы.</br></br>
+                            <b>Лечебная деимпульсация</b> применяется в тех случаях, когда удается определить конкретный источник боли. 
+							Метод представляет собой точечное воздействие на механизм боли с введением гормонального препарата с анестетиком непосредственно в очаг поражения. 
+							Такое воздействие направлено на снятие воспалительного процесса в связочном аппарате позвоночника и суставов, что позволяет добиться стойкой ремиссии и длительного отсутствия боли.</br></br>
+							Механизм боли у каждого пациента индивидуален, поэтому лечение требует клинического мышления и точной диагностики. 
+							Работа с источником воспаления принципиально отличается от симптоматических блокад и позволяет пациенту вернуться к полноценной жизни без постоянного болевого синдрома.
+
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="border-top: 1px solid #eee;">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 20px;">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===== КОНЕЦ МОДАЛЬНОГО ОКНА ===== -->
+          
+            
+            <div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
+                <div class="container ie-h-align-center-fix">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-7">
+    <div style="position: relative; overflow: hidden; height: 479px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <iframe 
+    src="https://yandex.ru/map-widget/v1/?z=10&pt=37.379032,55.842596,flag~37.579582,55.727305,flag~39.603756,43.676457,flag" 
+    width="100%" 
+    height="479" 
+    frameborder="0"
+    allowfullscreen="true"
+    loading="lazy"
+    style="position: relative; border: none;">
+</iframe>
+    </div>
+</div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
+                            <div class="tm-bg-white tm-p-4" style="max-height: 479px; overflow-y: auto; padding: 25px !important;">
+    <h3 style="color: #1a5276; font-weight: 700; font-size: 22px; margin-bottom: 15px; border-bottom: 3px solid #2e86c1; padding-bottom: 10px;">Запись на прием</h3>
+    
+    <p style="color: #34495e; font-size: 14px; margin-bottom: 20px; line-height: 1.6;">
+        Прием проводится в Москве и в Сочи по предварительной записи.
+    </p>
+
+    <!-- Москва -->
+    <h4 style="color: #2e86c1; font-weight: 700; font-size: 16px; margin-bottom: 10px;">Москва, четверг</h4>
+    
+    <div style="margin-bottom: 12px; padding-left: 10px; border-left: 3px solid #2e86c1; padding-left: 15px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 5px 15px;">
+            <span style="font-weight: 700; color: #1a5276; font-size: 14px; min-width: 90px;">Митино</span>
+            <span style="color: #555; font-size: 13px; flex: 1;">Медицинский центр МультиМед</span>
+            <span style="color: #2e86c1; font-size: 13px; font-weight: 600; white-space: nowrap;">9:00–12:00</span>
+        </div>
+        <div style="color: #888; font-size: 13px; padding-left: 105px; margin-top: 2px;">
+            Пятницкое шоссе, 15
+        </div>
+    </div>
+
+    <div style="margin-bottom: 12px; padding-left: 10px; border-left: 3px solid #2e86c1; padding-left: 15px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 5px 15px;">
+            <span style="font-weight: 700; color: #1a5276; font-size: 14px; min-width: 90px;">Фрунзенская</span>
+            <span style="color: #555; font-size: 13px; flex: 1;">Центр молекулярной диагностики CMD</span>
+            <span style="color: #2e86c1; font-size: 13px; font-weight: 600; white-space: nowrap;">13:00–17:00</span>
+        </div>
+        <div style="color: #888; font-size: 13px; padding-left: 105px; margin-top: 2px;">
+            Комсомольский проспект 28
+        </div>
+    </div>
+
+    <!-- Сочи -->
+    <h4 style="color: #2e86c1; font-weight: 700; font-size: 16px; margin-bottom: 10px; margin-top: 20px;">Сочи</h4>
+    
+    <div style="margin-bottom: 20px; padding-left: 10px; border-left: 3px solid #2e86c1; padding-left: 15px;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 5px 15px;">
+            <span style="font-weight: 700; color: #1a5276; font-size: 14px; min-width: 90px;">АкваЛоо</span>
+            <span style="color: #555; font-size: 13px; flex: 1;">Санаторий АкваЛоо</span>
+            <span style="color: #2e86c1; font-size: 13px; font-weight: 600; white-space: nowrap;">Пн/Ср/Пт 8:00–13:00</span>
+        </div>
+        <div style="color: #888; font-size: 13px; padding-left: 105px; margin-top: 2px;">
+            Декабристов, 78Б
+        </div>
+    </div>
+
+    <!-- Контакты -->
+    <div style="background: #e8f4f8; border-radius: 8px; padding: 15px; margin-top: 15px;">
+        <h4 style="color: #1a5276; font-weight: 700; font-size: 15px; margin-bottom: 10px;">Запись и связь</h4>
+        <div style="color: #34495e; font-size: 14px; line-height: 1.8;">
+            <div><span style="font-weight: 600;">Телефон:</span> +7 918 415-22-55</div>
+            <div>
+            <span style="font-weight: 600;">Звонки и сообщения:</span>
+            <a href="https://t.me/dr_gladchenko" target="_blank" style="color: #2e86c1; text-decoration: none;">Telegram</a>, WhatsApp, VK
+        </div>
+            <div><span style="font-weight: 600;">Почта:</span> zhivibezboli@yandex.ru</div>
+            <div style="margin-top: 5px; font-size: 13px; color: #7f8c8d;">Время для связи: 9:00–15:00</div>
+        </div>
+    </div>
+</div>                            
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            
+            <footer class="tm-bg-dark-blue">
+                <div class="container">
+                    <div class="row">
+                        <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
+                        Copyright &copy; <span class="tm-current-year">2026</span> Vladislav Mazol       
+                    </div>
+                </div>                
+            </footer>
+        </div>
+        
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+        <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+        <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+<script>
+    function setCarousel() {
+        if ($('.tm-article-carousel').hasClass('slick-initialized')) {
+            $('.tm-article-carousel').slick('destroy');
+        }
+
+        if ($(window).width() < 438) {
+            $('.tm-article-carousel').slick({
+                infinite: false,
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        } else {
+            $('.tm-article-carousel').slick({
+                infinite: false,
+                dots: false,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                rows: 2,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            rows: 1,
+                            dots: false
+                        }
+                    }
+                ]
+            });
+        }
+    }
+
+    function setPageNav() {
+        if ($(window).width() > 991) {
+            $('#tm-top-bar').singlePageNav({
+                currentClass: 'active',
+                offset: 79
+            });
+        } else {
+            $('#tm-top-bar').singlePageNav({
+                currentClass: 'active',
+                offset: 65
+            });
+        }
+    }
+
+    function togglePlayPause() {
+        var vid = $('.tmVideo').get(0);
+
+        if (vid.paused) {
+            vid.play();
+            $('.tm-btn-play').hide();
+            $('.tm-btn-pause').show();
+        } else {
+            vid.pause();
+            $('.tm-btn-play').show();
+            $('.tm-btn-pause').hide();
+        }
+    }
+
+    $(document).ready(function() {
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop() > 100) {
+                $(".tm-top-bar").addClass("active");
+            } else {
+                $(".tm-top-bar").removeClass("active");
+            }
+        });
+
+        // Slick carousel
+        setCarousel();
+        setPageNav();
+
+        $(window).resize(function() {
+            setCarousel();
+            setPageNav();
+        });
+
+        // Close navbar after clicked
+        $('.nav-link').click(function() {
+            $('#mainNav').removeClass('show');
+        });
+
+        // Control video
+        $('.tm-btn-play').click(function() {
+            togglePlayPause();
+        });
+
+        $('.tm-btn-pause').click(function() {
+            togglePlayPause();
+        });
+
+        // Update the current year in copyright
+        $('.tm-current-year').text(new Date().getFullYear());
+    });
+</script>             
+
+</body>
+</html>
